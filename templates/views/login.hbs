@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> headerLinks}}
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="container-fluid main_header">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-9">
+                    <div class="card card-login my-4" style="border-radius: 2rem;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-5 d-none d-md-block">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                                    alt="login form" class="img-fluid" style="border-radius: 2rem 0 0 2rem;" />
+                            </div>
+                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                                <div class="card-body p-4 p-lg-5 text-black">
+
+                                    <form action="/login" method="POST">
+                                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                                            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                                            <button type="button" class="btn btn-warning btn-floating mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                            </button>
+
+                                            <button type="button" class="btn btn-warning btn-floating mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                            </button>
+
+                                            <button type="button" class="btn btn-warning btn-floating mx-1">
+                                            <i class="fab fa-linkedin-in"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="divider d-flex align-items-center my-4">
+                                            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                                        </div>
+
+                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="EmailID" name="email" class="form-control form-control-lg" placeholder="Email ID" value=""/>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="Password" name="password" class="form-control form-control-lg" placeholder="Password" value="" />
+                                        </div>
+
+                                        <div class="pt-1 mb-4">
+                                            <button type="submit" style="border: none; 
+                                            padding: 0.8rem 2.8rem;font-size: 1.4rem;border-radius: 2rem;box-shadow: 0 8px 
+                                            6px -6px #000;">Login</button>
+                                        </div>
+
+                                        <a class="small text-muted" href="#!">Forgot password?</a>
+                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
+                                            style="color: #393f81;">Register here</a></p>
+                                        <a href="#!" class="small text-muted">Terms of use.</a>
+                                        <a href="#!" class="small text-muted">Privacy policy</a>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> footer}}
+</body>
+</html>
